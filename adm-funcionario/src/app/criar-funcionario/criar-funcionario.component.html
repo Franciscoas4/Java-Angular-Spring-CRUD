@@ -1,0 +1,23 @@
+<div class="col-md-6 offset-md-3">
+<h3> Criar Funcionário </h3>
+<form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+        <label> Primeiro Nome </label>
+        <input type="text" class="form-control" id="firstName"
+        [(ngModel)]="funcionario.firstName" name="firstName">
+    </div>
+    <div class="form-group">
+        <label> Último Nome </label>
+        <input type="text" class="form-control" id="lastName"
+        [(ngModel)]="funcionario.lastName" name="lastName">
+    </div>
+    <div class="form-group">
+        <label> E-mail </label>
+        <input type="text" class="form-control" id="email"
+        [(ngModel)]="funcionario.email" name="email">
+    </div>
+
+    <button class="btn btn-success mt-2" type="submit">Salvar</button>
+</form>
+</div>

@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="funcionarios" routerLinkActive="active"  class="nav-link">Lista de Funcionários</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="criar-funcionario" routerLinkActive="active"  class="nav-link">Criar Funcionário</a>
+    </li>
+  </ul>
+</nav>
+
+<h1 class="text-center"> {{title}} </h1>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer class="footer">
+  <div class="container">
+    <span>Todos os direitos reservados 2021</span>
+  </div>
+</footer>

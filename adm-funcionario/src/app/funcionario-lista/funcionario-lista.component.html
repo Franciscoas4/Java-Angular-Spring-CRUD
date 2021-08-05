@@ -1,0 +1,23 @@
+<h2>Lista de Funcionários</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Primeiro Nome</th>
+            <th>Último Nome</th>
+            <th>E-mail</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let funcionario of funcionarios">
+            <td>{{ funcionario.firstName}}</td>
+            <td>{{ funcionario.lastName}}</td>
+            <td>{{ funcionario.email}}</td>
+            <td>
+                <button (click)="atualizarFuncionario(funcionario.id)" class="btn btn-primary">Atualizar</button>
+                <button (click)="deletarFuncionario(funcionario.id)" class="btn btn-danger" style="margin-left: 10px;">Deletar</button>
+                <button (click)="detalhesFuncionario(funcionario.id)" class="btn btn-info" style="margin-left: 10px;">Detalhes</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
